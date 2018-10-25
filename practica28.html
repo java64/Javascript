@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 28</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<script type="text/javascript">
+		var sueldo = parseFloat(prompt("Ingrese su sueldo: "));
+		var antiguedad = parseInt(prompt("Ingrese su antiguedad: "));
+
+		if (sueldo < 500 && antiguedad >= 10) {
+			sueldo = sueldo * 1.20;
+			document.write("Su salario es " + sueldo);
+		}
+		if (sueldo < 500 && antiguedad < 10) {
+			sueldo = sueldo * 1.05;
+			document.write("Su salario es " + sueldo);	
+		}
+		if (sueldo >= 500) {
+			document.write("Su salario es: " + sueldo);
+		}
+
+	</script>
+</body>
+</html>

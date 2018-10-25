@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 17</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		 Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4
+		 mostrar un mensaje 'apto', sino 'suspenso'. 
+	 */
+	
+	var nota1 = parseFloat(prompt("Inserte una nota: "));
+	var nota2 = parseFloat(prompt("Inserte una nota: "));
+	var nota3 = parseFloat(prompt("Inserte una nota: "));
+	var media = ((nota1 + nota2 + nota3) / 3);
+
+	if (media >= 4) {
+		document.write("apto");
+	}
+
+	if (media < 4) {
+		document.write("no apto");
+	}
+</script>
+
+</body>
+</html>

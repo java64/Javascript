@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 16</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		Realizar un programa que lea por teclado dos números, si el primero es mayor al
+		segundo informar su suma y diferencia, en caso contrario informar el producto y la
+		división del primero respecto al segundo. 
+	*/
+	var numero1 = parseInt(prompt("Inserte un numero: "));
+	var numero2 = parseInt(prompt("Inserte un numero: "));
+
+	if (numero1 > numero2) {
+		document.write("La suma es: " + (numero2 + numero1));
+		document.write("<br /> La diferencia es: " + (numero1 - numero2));
+	}else{
+		document.write("El producto es : " + (numero1*numero2));
+		document.write("<br /> La división es: " + (numero1/numero2));
+	}
+</script>
+</body>
+</html>

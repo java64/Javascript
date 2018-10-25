@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 23</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numeros = new Array();
+
+		do{
+			numeros.push(parseInt(prompt("Inserte un numero (no repetido): ")));
+			numeros = eliminarDuplicados(numeros); //Llama a la funcion auxiliar que elimina los repetidos de un array.
+		}while(numeros.length != 3);
+
+		numeros.sort(); //Ordenamos de menor a mayor, de tal forma que el ultimo elemento es el mayor.
+
+		document.write("El elemento mayor es: " + numeros[2]);
+
+
+		function eliminarDuplicados(vector) {
+			 var i,
+			     len=vector.length,
+			     out=[],
+			     obj={};
+
+			 for (i=0;i<len;i++) {
+			    obj[vector[i]]=0;
+			 }
+
+			 for (i in obj) {
+			    out.push(i);
+			 }
+			 return out;
+		}
+	</script>
+
+</body>
+</html>

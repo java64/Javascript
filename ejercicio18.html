@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 18</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) mostrar
+		un mensaje indicando si el número tiene uno o dos dígitos (recordar convertir a entero
+		con parseInt para preguntar posteriormente por una variable entera).Tener en cuenta
+		qué condición debe cumplirse para tener dos dígitos, un número entero.
+	 */
+	
+	var numero;
+
+	do{
+		numero = Math.abs(parseInt(prompt("Inserte un numero: ")));
+	}while(numero > 99 && numero < 1);
+
+	if (numero/10 < 1) {
+		document.write("El numero es de un digito!.");
+	}else{
+		document.write("El numero es de dos digitos!.");
+	}
+
+</script>
+</body>
+</html>

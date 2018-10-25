@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 9</title>
+</head>
+<body>
+<script type="text/javascript">
+		/*
+			Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los
+			dos primeros y el producto del tercero y el cuarto. 
+		*/
+			var numeros = new Array();
+
+			do{
+				numeros.push(parseInt(prompt("Inserte un numero: ")));
+			}while(numeros.length != 4);
+
+			document.write("La suma de los dos primero es: " + (numeros[0] + numeros[1]));
+			document.write("<br />");
+			document.write("El producto del tercero y el cuarto es: " + (numeros[2] * numeros[3]));
+		
+</script>
+
+</body>
+</html>

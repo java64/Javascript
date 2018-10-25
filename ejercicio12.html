@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 12</title>
+</head>
+<body>
+<script type="text/javascript">
+		/*
+			Realizar la carga de una nota de un alumno. Mostrar un mensaje que aprobó si tiene
+			una nota mayor o igual a 4
+		 */
+
+			var nota = Math.abs(parseFloat(prompt("Inserte la nota: "))); //Pedimos la nota. Se pasa a valor absoluto para descartar numeros negativos.
+
+			if (nota > 10) {
+				document.write("La nota no puede ser superior a 10!");
+			}else{
+				if (nota < 5) {
+					document.write("No ha aprobado");
+				}else{
+					document.write("Ha aprobado. Enhorabuena!");
+				}
+			}
+		
+</script>
+
+</body>
+</html>

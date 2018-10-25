@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 24</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			Realizar un programa que pida cargar una fecha cualquiera, luego verificar si
+			dicha fecha corresponde a Navidad. (No utilizar todavía objeto Date)
+		 */
+		
+		var fecha = prompt("Inserte la fecha (dd-mm-yyyy): ");
+		var datos = fecha.split("-"); //Separamos los digitos de la fecha y los guardamos en un array.
+
+		var dia = parseInt(datos[0]); //Pasamos el dia a entero.
+		var mes = parseInt(datos[1]); //Pasamos el mes a entero.
+
+
+		if (dia == 25 && mes == 12) {
+			document.write("Es NAVIDAD.");
+		}else{
+			document.write("No es NAVIDAD");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 19</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el
+		promedio e imprima alguno de estos mensajes:
+
+			a. Si el promedio es >=7 mostrar "Promocionado".
+			b. Si el promedio es >=4 y <7 mostrar "Regular".
+			c. Si el promedio es <4 mostrar "suspenso".
+	 */
+	
+	var nota1 = parseFloat(prompt("Inserte una nota: "));
+	var nota2 = parseFloat(prompt("Inserte una nota: "));
+    var nota3 = parseFloat(prompt("Inserte una nota: "));	
+    var promedio = (nota1 + nota2 + nota3) / 3;
+
+    if (promedio >= 7) {
+    	document.write("<h1>Promocionado!</h1>");
+    }else{
+    	if (promedio >= 4) {
+    		document.write("<h1>Regular!</h1>");
+    	}else{
+    		if (promedio < 4) {
+    			document.write("<h1>Suspenso!</h1>");
+    		}
+    	}
+    }
+</script>
+</body>
+</html>

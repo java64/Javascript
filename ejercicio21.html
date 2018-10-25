@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 21</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		Confeccionar un programa que permita cargar un número entero positivo de
+		hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, ó 3 cifras. Mostrar un
+		mensaje de error si el número de cifras no es 1, 2 ó 3.
+	*/
+	var numero = Math.abs(parseInt(prompt("Introduzca un numero: "))); //Si se introduce un numero negativo, se pasa a positivo.
+
+	if (numero / 10 < 1) {
+		document.write("Tiene UNA cifra.");
+	}else{
+		if (numero / 100 < 1) {
+			document.write("Tiene DOS cifras.");
+		}else{
+			if (numero / 1000 < 1) {
+				document.write("Tiene TRES cifras.");
+			}else{
+				document.write("Error. El numero de cifras no es 1, 2 ni 3.");
+			}
+		}
+	}
+	
+	
+
+</script>
+</body>
+</html>

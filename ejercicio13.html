@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 13</title>
+</head>
+<body>
+<script type="text/javascript">
+	    /*
+			Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete
+			mostrar el mensaje 'Promocionado'. 
+		 */
+			var notas = new Array();
+			var mensaje = "Inserte una nota: ";
+			var acumulador = 0; //Sumatoria de las notas.
+
+			for (var i = 0; i <= 2; i++) {
+				notas.push(parseFloat(prompt(mensaje)));
+			}
+
+			for (var i = 0; i < notas.length; i++) {
+				acumulador += notas[i];
+			}
+
+			document.write("La media es: " + (acumulador/notas.length));
+</script>
+</body>
+</html>

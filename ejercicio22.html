@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 22</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		/*
+			De un candidato a un empleo, que realizó un test de capacitación, se obtuvo la
+			siguiente información: nombre del candidato, cantidad total de preguntas que se le
+			realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar
+			un programa que lea los datos del candidato e informe el nivel del mismo según el
+			porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
+
+			Nivel superior:Porcentaje>=90%.
+			Nivel medio: Porcentaje>=75% y <90%.
+			Nivel bajo: Porcentaje>=50% y <75%.
+			Fuera de nivel: Porcentaje<50%.
+		*/
+		
+		var nombre = prompt("Inserte su nombre: ");
+		var cantidadPreguntas = parseInt(prompt("Inserte la cantidad de preguntas: "));
+		var preguntasAcertadas = parseInt(prompt("Inserte el numero de preguntas acertadas: "));
+
+		var porcentajeAcierto = Math.round(((preguntasAcertadas * 100) / cantidadPreguntas), 2);
+
+		if (cantidadPreguntas < preguntasAcertadas) {
+			document.write("No puedes acertar mas preguntas de las que existen.");
+		}else{
+			if (porcentajeAcierto >= 90) {
+						document.write("Nivel Superior");
+					}else{
+						if (porcentajeAcierto >= 75 && porcentajeAcierto < 90) {
+							document.write("Nivel Medio");
+						}else{
+							if (porcentajeAcierto >= 50 && porcentajeAcierto < 75) {
+								document.write("Nivel Bajo");
+							}else{
+								if (porcentajeAcierto < 50) {
+									document.write("Fuera de nivel");
+								}
+							}
+						}
+					}
+		}
+
+		
+
+
+	</script>
+</body>
+</html>

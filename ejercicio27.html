@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repaso - Ejercicio 27</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = parseFloat(prompt("Introduzca el valor de X"));
+		var y = parseFloat(prompt("Introduzca el valor de Y"));
+
+		if (x > 0 && y > 0) {
+			document.write("<p>El punto [" + x  + ", " + y + "] se encuentra en el primer cuadrante</p>");
+		}
+
+		if (x < 0 && y > 0) {
+			document.write("<p>El punto [" + x  + ", " + y + "] se encuentra en el segundo cuadrante</p>");
+		}
+
+		if (x < 0 && y < 0) {
+			document.write("<p>El punto [" + x  + ", " + y + "] se encuentra en el tercer cuadrante</p>");
+		}
+
+		if (x > 0 && y < 0) {
+			document.write("<p>El punto [" + x  + ", " + y + "] se encuentra en el cuarto cuadrante</p>");
+		}
+		if (x == 0 && y == 0) {
+			document.write("<p>Esta en el punto [0,0]</p>")
+		}
+	</script>
+
+</body>
+</html>
